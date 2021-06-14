@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="FORM_CSS.css">
+    <script type="text/javascript" src="FORM_JS.JS"></script>
+  </head>
+  <body onload="captSel()">
+      <form>
+        <input class="stdInput" type="text" id="username" placeholder="Потребителско име" name="username">
+        <input class="stdInput" type="text" id="password" placeholder="Парола" name="password">
+        <input class="stdInput" type="text" id="phone" placeholder="Телефон" name="phone">
+        <input class="stdInput" type="text" id="email" placeholder="Имейл адрес" name="email">
+        <select class="selInput" id="job" name="job">
+          <option value="Математик">Математик</option>
+          <option value="Програмист">Програмист</option>
+        </select>
+        <input class="stdInput" type="text" id="apartment" placeholder="Номер на апартамента" name="apartment">
+        <input class="submitButton" type="button" id="regBtn" value="Регистрирай ме!" onclick="checkForm()">
+      </form>
+  </body>
+</html>

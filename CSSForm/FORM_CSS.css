@@ -1,0 +1,112 @@
+:root
+{
+  /*--margBot: 0.7em;*/
+  --margBot: 12px;
+  --bordSz: 2px;
+  --boxPadding: 6px;
+  --formWidth: 363px;
+  --fieldHeight: 38px;
+  --plchldFntSz: 16px;
+}
+
+
+/*Размер на placeholder-a*/
+input::-webkit-input-placeholder
+{
+font-size: var(--plchldFntSz);
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+font-size: var(--plchldFntSz);
+}
+
+input::-ms-input-placeholder { /* IE Edge */
+font-size: var(--plchldFntSz);
+}
+
+
+body, html
+{
+  background-color: #DEFDF1;
+  height: 100%;
+  font-size: 20px;
+}
+
+form
+{
+  display: block;
+  border: 1px solid #47812A;
+  padding: 30px;
+  width: var(--formWidth);
+  margin: 17% auto auto auto;
+}
+input, select
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  box-sizing:border-box;
+  width: 100%;
+  height: var(--fieldHeight);
+  font-size: var(--plchldFntSz);
+  /*transition: 0.35s; /*Тъй като не беше казано изрично дали да има, го коментирах. Според мен с него би изглеждало по-добре.*/
+  padding: var(--boxPadding);
+}
+
+
+.stdInput, .selInput
+{
+  color: #000000;
+  margin-bottom: var(--margBot);
+  border: var(--bordSz) solid #C3CDC0;
+  background-color: #FFFFFF;
+}
+.selInput
+{
+  border: var(--bordSz) solid #ACB6A9;
+}
+
+.stdInput:hover
+{
+  border: var(--bordSz) solid #79A06B;
+}
+
+/*Тука от снимката не става ясно кое от :hover или :focus е, тъй като не се вижда мишката. От усл.3 предполагам се иска :hover.*/
+.selInput:hover
+{
+  border: var(--bordSz) solid #629264;
+}
+
+/*Колкото да може да се "тегли" над текста и да се вижда*/
+.stdInput::selection
+{
+  border: var(--bordSz) solid #79A06B;
+  color: #558D3D;
+  background-color: #CFE7D9;
+}
+
+
+.submitButton
+{
+  text-align: center;
+  color: #558D3D;
+  background-color: #CFE7D9;
+  border: var(--bordSz) solid #BBC9BA;
+}
+.submitButton:hover
+{
+  color: #CFE7D9;
+  background-color: #558D3D;
+  border: var(--bordSz) solid #CFE7D9;
+}
+
+
+.invalidField
+{
+  color: #FFFFFF;
+  background-color: #B0706D;
+  border: var(--bordSz) solid #B0706D;
+  margin-bottom: var(--margBot);
+  padding: var(--boxPadding);
+}

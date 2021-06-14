@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="FORM_CHECK.js"></script>
+  </head>
+  <body>
+    <form>
+      <label for="username">потребителско име</label>
+      <input type="text" id="username" name="username">
+      <br>
+      <label for="name">име</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="family-name">фамилия</label>
+      <input type="text" id="family-name" name="family-name">
+      <br>
+      <label for="email">имейл</label>
+      <input type="text" id="email" name="email">
+      <br>
+      <label for="password">парола</label>
+      <input type="text" id="password" name="password">
+      <br>
+      <label for="street">Улица</label>
+      <input type="text" id="street" name="street">
+      <br>
+      <label for="city">Град</label>
+      <input type="text" id="city" name="city">
+      <br>
+      <label for="postal-code">пощенски код</label>
+      <input type="text" id="postal-code" name="postal-code">
+      <br>
+      <input type="button" id="register-btn" value="бутон за регистрация" onclick="checkForm()">
+    </form>
+    <p class="error"></p>
+    <p id="success"></p>
+  </body>
+</html>

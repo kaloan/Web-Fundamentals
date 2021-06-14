@@ -1,0 +1,103 @@
+header
+{
+  align-content: center;
+  border-bottom: solid rgb(85, 180, 256) 4px;
+}
+body
+{
+  color: #0e090a;
+  background-color: brown;
+}
+h1
+{
+  color: hsl(211, 100%, 62%);
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+p
+{
+  text-align: justify;
+  font-family: sans-serif;
+}
+div.theorem
+{
+  color: rgb(88, 200, 228);
+  background-color: hsla(360, 100%, 100%, 1);
+  font-family: serif;
+  font-style: italic;
+  border-left: solid rgb(88, 200, 228) 10px;
+  border-right: solid rgb(88, 200, 228) 10px;
+  text-align: center;
+  padding: 3px 15px;
+  margin: 20px 25px;
+}
+div.page
+{
+  padding: 40px;
+  margin: 8%;
+  background-color: wheat;
+}
+a:link
+{
+  color: rgb(185, 80, 56);
+  /*background-color: rgb(88, 200, 228);*/
+}
+a:visited
+{
+  color: White;
+  background-color: Grey;
+}
+a:hover
+{
+  /*color: White;
+  background-color: rgb(190, 200, 228);*/
+  color: rgb(190, 200, 58);
+}
+ul
+{
+  text-align: center;
+  list-style-type: none;
+  margin: 0px 10px 30px 10px;
+  /*background-color: #7A92FAAA;*/
+}
+li
+{
+  display: inline;
+  background-color: rgba(88, 200, 255, 1.0);
+  padding: 8px 15px;
+  margin: 8px;
+}
+img
+{
+  position: relative;
+  left: 40%;
+  top: 15px;
+  margin: 15px 0px;
+}
+.formula
+{
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+.fig
+{
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+p b
+{
+  color: #ce493a;
+  font-weight: 16pt;
+}
+li a
+{
+  text-decoration: none;
+}
+li:hover
+{
+  background-color: rgb(250,15,30);
+  color: rgb(190, 200, 58);
+}
